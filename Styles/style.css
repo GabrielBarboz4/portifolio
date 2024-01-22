@@ -70,6 +70,11 @@ strong {
     width: 50%;
 }
 
+.apresentacao__imagem-curriculo {
+    width: 40%;
+    border-radius: 10px;
+}
+
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     gap: 40px;
@@ -130,12 +135,21 @@ strong {
     text-align: center;
 }
 
+.apresentacao__curriculo {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
 @media (max-width: 1200px) {
     .cabecalho{
          padding: 3% 0 0 0;  
     }
     .cabecalho__menu {
-        justify-content: center;
+        justify-content: space-between;
+        gap: 0px;
+        margin: 3%;
+
     }
     .apresentacao{
         flex-direction: column-reverse;
@@ -144,5 +158,12 @@ strong {
     }
     .apresentacao__conteudo{
         width: auto;
+    }
+    .apresentacao__imagem {
+        width: 80%;
+    }
+    .apresentacao__imagem-curriculo {
+        width: 80%;
+        border-radius: 10px;
     }
 }
